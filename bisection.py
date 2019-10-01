@@ -104,14 +104,10 @@ def solver(list1, list2):
             break
             
     print("root value is : " , round(a, 4))
-inp = input()
+    
+if __name__ == "__main__" :
+    inp = input()
+    p, q = parser(inp)
+    solver(p, q)
 
-p, q = parser(inp)
-solver(p, q)
-
-#print(p, q)
-"""
-
-
-#print(p)
-"""
+"""this code can find value for like [x3 - x1 - 11] OR [x^3 - x^1 - 11] OR [-x1 + x3 - 11] OR [-x^1 + x^3 - 11]"""
