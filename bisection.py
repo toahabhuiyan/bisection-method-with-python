@@ -105,8 +105,17 @@ def solver(list1, list2):
             
     print("root value is : " , round(a, 4))
     
-if __name__ == "__main__" :
-    inp = input()
+if __name__ == "__main__":
+    # inp = input()
+
+    
+    # with open('input.txt','w') as f:
+    #     f.write(inp)
+
+    inp = ''
+
+    with open('input.txt') as f:
+        inp = f.read()
     p, q = parser(inp)
     solver(p, q)
 
